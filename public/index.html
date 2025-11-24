@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Web Server</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Minimal Web Server</h1>
+        </header>
+        
+        <main>
+            <section class="card">
+                <h2>Backend Connection Test</h2>
+                <button id="fetchBtn" class="btn">Fetch from Backend</button>
+                <div id="response" class="response"></div>
+            </section>
+            
+            <section class="card">
+                <h2>Send Data to Backend</h2>
+                <form id="dataForm">
+                    <input 
+                        type="text" 
+                        id="nameInput" 
+                        placeholder="Enter your name" 
+                        required
+                    >
+                    <button type="submit" class="btn">Send</button>
+                </form>
+                <div id="formResponse" class="response"></div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
